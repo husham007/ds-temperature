@@ -1,0 +1,168 @@
+2024-04-13 15:17:19 - INFO - RPC server started.
+2024-04-13 15:17:24 - INFO - Measurement reading thread started
+2024-04-13 15:17:24 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:17:24 - INFO - Measurement reading started.
+2024-04-13 15:17:24 - INFO - Reading measurement from sensor -20.42
+2024-04-13 15:17:26 - INFO - Starting measurement dispatch.
+2024-04-13 15:17:26 - INFO - Dispatch measurement thread started
+2024-04-13 15:17:26 - INFO - Measurement dispatch started.
+2024-04-13 15:17:26 - INFO - Sending measurement to external API
+2024-04-13 15:17:26 - INFO - Measurement dispatched successfully.
+2024-04-13 15:17:28 - INFO - Retrieving sensor information.
+2024-04-13 15:18:24 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:18:24 - INFO - Reading measurement from sensor -21.56
+2024-04-13 15:18:25 - INFO - Sending measurement to external API
+2024-04-13 15:18:25 - INFO - Measurement dispatched successfully.
+2024-04-13 15:19:24 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:19:24 - INFO - Reading measurement from sensor -37.46
+2024-04-13 15:19:24 - INFO - Sending measurement to external API
+2024-04-13 15:19:24 - INFO - Measurement dispatched successfully.
+2024-04-13 15:19:30 - INFO - Stopping measurement reading.
+2024-04-13 15:20:24 - INFO - Measurement reading stopped.
+2024-04-13 15:20:26 - INFO - Stopping measurement dispatch.
+2024-04-13 15:20:27 - INFO - Dispatch measurement thread stopped.
+2024-04-13 15:20:27 - INFO - Measurement dispatch stopped.
+2024-04-13 15:20:29 - INFO - Stopping XML-RPC server.
+2024-04-13 15:20:29 - INFO - Exiting main program.
+2024-04-13 15:22:18 - INFO - RPC server started.
+2024-04-13 15:22:24 - INFO - Measurement reading thread started
+2024-04-13 15:22:24 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:22:24 - INFO - Measurement reading started.
+2024-04-13 15:22:24 - INFO - Reading measurement from sensor 32.29
+2024-04-13 15:22:26 - INFO - Starting measurement dispatch.
+2024-04-13 15:22:26 - INFO - Dispatch measurement thread started
+2024-04-13 15:22:26 - INFO - Measurement dispatch started.
+2024-04-13 15:22:26 - INFO - Sending measurement to external API
+2024-04-13 15:22:26 - INFO - Measurement dispatched successfully.
+2024-04-13 15:22:28 - INFO - Retrieving sensor information.
+2024-04-13 15:22:30 - INFO - Stopping measurement reading.
+2024-04-13 15:23:24 - INFO - Measurement reading stopped.
+2024-04-13 15:23:26 - INFO - Stopping measurement dispatch.
+2024-04-13 15:23:26 - INFO - Dispatch measurement thread stopped.
+2024-04-13 15:23:26 - INFO - Measurement dispatch stopped.
+2024-04-13 15:23:28 - INFO - Stopping XML-RPC server.
+2024-04-13 15:23:28 - INFO - Exiting main program.
+2024-04-13 15:24:59 - INFO - RPC server started.
+2024-04-13 15:25:05 - INFO - Measurement reading thread started
+2024-04-13 15:25:05 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:25:05 - INFO - Measurement reading started.
+2024-04-13 15:25:05 - INFO - Reading measurement from sensor -31.52
+2024-04-13 15:25:07 - INFO - Starting measurement dispatch.
+2024-04-13 15:25:07 - INFO - Dispatch measurement thread started
+2024-04-13 15:25:07 - INFO - Measurement dispatch started.
+2024-04-13 15:25:07 - INFO - Sending measurement to external API
+2024-04-13 15:25:07 - INFO - Measurement dispatched successfully.
+2024-04-13 15:25:09 - INFO - Retrieving sensor information.
+2024-04-13 15:25:11 - INFO - Stopping measurement reading.
+2024-04-13 15:26:05 - INFO - Measurement reading stopped.
+2024-04-13 15:26:07 - INFO - Stopping measurement dispatch.
+2024-04-13 15:26:07 - INFO - Dispatch measurement thread stopped.
+2024-04-13 15:26:07 - INFO - Measurement dispatch stopped.
+2024-04-13 15:26:09 - INFO - Stopping XML-RPC server.
+2024-04-13 15:26:09 - INFO - Exiting main program.
+2024-04-13 15:28:51 - INFO - RPC server started.
+2024-04-13 15:28:56 - INFO - Measurement reading thread started
+2024-04-13 15:28:56 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:28:56 - INFO - Measurement reading started.
+2024-04-13 15:28:56 - INFO - Reading measurement from sensor 27.34
+2024-04-13 15:28:58 - INFO - Starting measurement dispatch.
+2024-04-13 15:28:58 - INFO - Dispatch measurement thread started
+2024-04-13 15:28:58 - INFO - Measurement dispatch started.
+2024-04-13 15:28:58 - INFO - Sending measurement to external API
+2024-04-13 15:28:58 - INFO - Measurement dispatched successfully.
+2024-04-13 15:29:00 - INFO - Retrieving sensor information.
+2024-04-13 15:29:02 - INFO - Stopping measurement reading.
+2024-04-13 15:29:56 - INFO - Measurement reading stopped.
+2024-04-13 15:29:58 - INFO - Stopping measurement dispatch.
+2024-04-13 15:29:58 - INFO - Dispatch measurement thread stopped.
+2024-04-13 15:29:58 - INFO - Measurement dispatch stopped.
+2024-04-13 15:30:00 - INFO - Stopping XML-RPC server.
+2024-04-13 15:30:00 - INFO - Exiting main program.
+2024-04-13 15:30:22 - INFO - RPC server started.
+2024-04-13 15:30:27 - INFO - Measurement reading thread started
+2024-04-13 15:30:27 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:30:27 - INFO - Measurement reading started.
+2024-04-13 15:30:27 - INFO - Reading measurement from sensor 32.61
+2024-04-13 15:30:29 - INFO - Starting measurement dispatch.
+2024-04-13 15:30:29 - INFO - Dispatch measurement thread started
+2024-04-13 15:30:29 - INFO - Measurement dispatch started.
+2024-04-13 15:30:29 - INFO - Sending measurement to external API
+2024-04-13 15:30:29 - INFO - Measurement dispatched successfully.
+2024-04-13 15:30:31 - INFO - Retrieving sensor information.
+2024-04-13 15:30:33 - INFO - Stopping measurement reading.
+2024-04-13 15:30:33 - INFO - Measurement reading stopped.
+2024-04-13 15:30:35 - INFO - Stopping measurement dispatch.
+2024-04-13 15:30:36 - INFO - Dispatch measurement thread stopped.
+2024-04-13 15:30:36 - INFO - Measurement dispatch stopped.
+2024-04-13 15:30:38 - INFO - Stopping XML-RPC server.
+2024-04-13 15:30:38 - INFO - Exiting main program.
+2024-04-13 15:32:37 - INFO - RPC server started.
+2024-04-13 15:32:43 - INFO - Measurement reading thread started
+2024-04-13 15:32:43 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:32:43 - INFO - Measurement reading started.
+2024-04-13 15:32:43 - INFO - Reading measurement from sensor -42.56
+2024-04-13 15:32:45 - INFO - Starting measurement dispatch.
+2024-04-13 15:32:45 - INFO - Dispatch measurement thread started
+2024-04-13 15:32:45 - INFO - Measurement dispatch started.
+2024-04-13 15:32:45 - INFO - Sending measurement to external API
+2024-04-13 15:32:45 - INFO - Measurement dispatched successfully.
+2024-04-13 15:32:47 - INFO - Retrieving sensor information.
+2024-04-13 15:32:49 - INFO - Stopping measurement reading.
+2024-04-13 15:34:51 - INFO - RPC server started.
+2024-04-13 15:34:51 - INFO - Stopping measurement reading.
+2024-04-13 15:34:51 - INFO - Measurement reading stopped.
+2024-04-13 15:34:53 - INFO - Stopping measurement dispatch.
+2024-04-13 15:34:59 - INFO - Measurement reading thread started
+2024-04-13 15:34:59 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:34:59 - INFO - Measurement reading started.
+2024-04-13 15:34:59 - INFO - Reading measurement from sensor 43.0
+2024-04-13 15:35:01 - INFO - Starting measurement dispatch.
+2024-04-13 15:35:01 - INFO - Dispatch measurement thread started
+2024-04-13 15:35:01 - INFO - Measurement dispatch started.
+2024-04-13 15:35:01 - INFO - Sending measurement to external API
+2024-04-13 15:35:01 - INFO - Measurement dispatched successfully.
+2024-04-13 15:35:03 - INFO - Retrieving sensor information.
+2024-04-13 15:35:05 - INFO - Stopping measurement reading.
+2024-04-13 15:35:05 - INFO - Measurement reading stopped.
+2024-04-13 15:35:07 - INFO - Stopping measurement dispatch.
+2024-04-13 15:35:08 - INFO - Dispatch measurement thread stopped.
+2024-04-13 15:35:08 - INFO - Measurement dispatch stopped.
+2024-04-13 15:35:10 - INFO - Stopping XML-RPC server.
+2024-04-13 15:35:10 - INFO - Exiting main program.
+2024-04-13 15:36:36 - INFO - RPC server started.
+2024-04-13 15:36:41 - INFO - Measurement reading thread started
+2024-04-13 15:36:41 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:36:41 - INFO - Measurement reading started.
+2024-04-13 15:36:41 - INFO - Reading measurement from sensor 42.4
+2024-04-13 15:36:43 - INFO - Starting measurement dispatch.
+2024-04-13 15:36:43 - INFO - Dispatch measurement thread started
+2024-04-13 15:36:43 - INFO - Measurement dispatch started.
+2024-04-13 15:36:43 - INFO - Sending measurement to external API
+2024-04-13 15:36:43 - INFO - Measurement dispatched successfully.
+2024-04-13 15:36:45 - INFO - Retrieving sensor information.
+2024-04-13 15:36:47 - INFO - Stopping measurement reading.
+2024-04-13 15:36:47 - INFO - Measurement reading stopped.
+2024-04-13 15:36:49 - INFO - Stopping measurement dispatch.
+2024-04-13 15:36:50 - INFO - Dispatch measurement thread stopped.
+2024-04-13 15:36:50 - INFO - Measurement dispatch stopped.
+2024-04-13 15:36:52 - INFO - Stopping XML-RPC server.
+2024-04-13 15:36:52 - INFO - Exiting main program.
+2024-04-13 15:43:15 - INFO - RPC server started.
+2024-04-13 15:43:22 - INFO - Measurement reading thread started
+2024-04-13 15:43:22 - INFO - Reading measurement from sensor temperature
+2024-04-13 15:43:22 - INFO - Measurement reading started.
+2024-04-13 15:43:22 - INFO - Reading measurement from sensor -26.98
+2024-04-13 15:43:24 - INFO - Starting measurement dispatch.
+2024-04-13 15:43:24 - INFO - Dispatch measurement thread started
+2024-04-13 15:43:24 - INFO - Measurement dispatch started.
+2024-04-13 15:43:24 - INFO - Sending measurement to external API
+2024-04-13 15:43:24 - INFO - Measurement dispatched successfully.
+2024-04-13 15:43:26 - INFO - Retrieving sensor information.
+2024-04-13 15:43:28 - INFO - Stopping measurement reading.
+2024-04-13 15:44:22 - INFO - Measurement reading thread stopped.
+2024-04-13 15:44:22 - INFO - Measurement reading stopped.
+2024-04-13 15:44:24 - INFO - Stopping measurement dispatch.
+2024-04-13 15:44:24 - INFO - Dispatch measurement thread stopped.
+2024-04-13 15:44:24 - INFO - Measurement dispatch stopped.
+2024-04-13 15:44:26 - INFO - Stopping XML-RPC server.
+2024-04-13 15:44:26 - INFO - Exiting main program.
