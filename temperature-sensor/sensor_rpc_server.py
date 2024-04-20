@@ -47,7 +47,7 @@ class Sensor:
         self.type = sensor_type
         self.location = Location(contient, country, location_name, latitude, longitude)
         self.measurement_queue = Queue()
-        self.lock = threading.Lock()
+        self.measurement_queue_lock = threading.Lock()
         self.measure_thread_stop_event = threading.Event()
         self.dispatch_thread_stop_event = threading.Event()
         self.measure_thread = None
@@ -61,14 +61,16 @@ class Sensor:
     def dispatch_measurement(self):
         logging.info("Dispatch measurement thread started")
         while not self.dispatch_thread_stop_event.is_set():
-            if not self.measurement_queue.empty():
-                measurement = self.measurement_queue.get()
-                try:
-                    self.send_measurement(measurement)
-                    logging.info("Measurement dispatched successfully.")
-                except Exception as e:
-                    logging.error(f"Error sending measurement: {e}")
-            time.sleep(1)
+            with self.measurement_queue_lock:
+                if not self.measurement_queue.empty():
+                    measurement = self.measurement_queue.queue[0]
+                    try:
+                        self.send_measurement(measurement)
+                        logging.info("Measurement dispatched successfully.")
+                        self.measurement_queue.get()
+                    except Exception as e:
+                        logging.error(f"Error sending measurement: {e}")
+                time.sleep(1)
         logging.info("Dispatch measurement thread stopped.")
 
     def send_measurement(self, measurement):
@@ -99,9 +101,8 @@ class Sensor:
         while not self.measure_thread_stop_event.is_set():
             measurement = self.read()
             logging.info(f"Reading measurement from sensor {measurement}")
-            with self.lock:
-                self.measurement_queue.put(measurement)
-            time.sleep(60)
+            self.measurement_queue.put(measurement)
+            time.sleep(30)
         logging.info("Measurement reading thread stopped.")
 
     def start_measurement(self):

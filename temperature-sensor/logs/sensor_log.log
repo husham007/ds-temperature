@@ -5693,3 +5693,53 @@ Exception Value: You called this URL via POST, but the URL doesn&#x27;t end in a
 2024-04-20 16:09:35 - DEBUG - http://127.0.0.1:8000 "POST /temperature-collector/ HTTP/1.1" 200 16
 2024-04-20 16:09:35 - INFO - Measurement received by temperature collector
 2024-04-20 16:09:35 - INFO - Measurement dispatched successfully.
+2024-04-20 16:24:57 - INFO - RPC server started on port 8001.
+2024-04-20 16:25:03 - INFO - Measurement reading thread started
+2024-04-20 16:25:03 - INFO - Reading measurement from sensor temperature
+2024-04-20 16:25:03 - INFO - Measurement reading started.
+2024-04-20 16:25:03 - INFO - Reading measurement from sensor 21
+2024-04-20 16:25:05 - INFO - Starting measurement dispatch.
+2024-04-20 16:25:05 - INFO - Dispatch measurement thread started
+2024-04-20 16:25:05 - INFO - Measurement dispatch started.
+2024-04-20 16:25:05 - INFO - Sending measurement to external API
+2024-04-20 16:25:05 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:25:07 - INFO - Retrieving sensor information.
+2024-04-20 16:25:07 - ERROR - Error sending measurement: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /temperature-collector/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D90D9F670>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-20 16:25:08 - INFO - Sending measurement to external API
+2024-04-20 16:25:08 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:25:10 - ERROR - Error sending measurement: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /temperature-collector/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D90DC5160>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-20 16:25:11 - INFO - Sending measurement to external API
+2024-04-20 16:25:11 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:25:14 - ERROR - Error sending measurement: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /temperature-collector/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D90DC5B50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-20 16:25:15 - INFO - Sending measurement to external API
+2024-04-20 16:25:15 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:25:17 - ERROR - Error sending measurement: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /temperature-collector/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D90DCF580>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-20 16:25:18 - INFO - Sending measurement to external API
+2024-04-20 16:25:18 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:25:20 - ERROR - Error sending measurement: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /temperature-collector/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D90DC5370>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-20 16:25:21 - INFO - Sending measurement to external API
+2024-04-20 16:25:21 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:25:22 - DEBUG - http://127.0.0.1:8000 "POST /temperature-collector/ HTTP/1.1" 200 16
+2024-04-20 16:25:22 - INFO - Measurement received by temperature collector
+2024-04-20 16:25:22 - INFO - Measurement dispatched successfully.
+2024-04-20 16:25:33 - INFO - Reading measurement from sensor temperature
+2024-04-20 16:25:33 - INFO - Reading measurement from sensor 26
+2024-04-20 16:25:34 - INFO - Sending measurement to external API
+2024-04-20 16:25:34 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:25:34 - DEBUG - http://127.0.0.1:8000 "POST /temperature-collector/ HTTP/1.1" 200 16
+2024-04-20 16:25:34 - INFO - Measurement received by temperature collector
+2024-04-20 16:25:34 - INFO - Measurement dispatched successfully.
+2024-04-20 16:26:03 - INFO - Reading measurement from sensor temperature
+2024-04-20 16:26:03 - INFO - Reading measurement from sensor 16
+2024-04-20 16:26:04 - INFO - Sending measurement to external API
+2024-04-20 16:26:04 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:26:04 - DEBUG - http://127.0.0.1:8000 "POST /temperature-collector/ HTTP/1.1" 200 16
+2024-04-20 16:26:04 - INFO - Measurement received by temperature collector
+2024-04-20 16:26:04 - INFO - Measurement dispatched successfully.
+2024-04-20 16:26:33 - INFO - Reading measurement from sensor temperature
+2024-04-20 16:26:33 - INFO - Reading measurement from sensor -42
+2024-04-20 16:26:34 - INFO - Sending measurement to external API
+2024-04-20 16:26:34 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:8000
+2024-04-20 16:26:34 - DEBUG - http://127.0.0.1:8000 "POST /temperature-collector/ HTTP/1.1" 200 16
+2024-04-20 16:26:34 - INFO - Measurement received by temperature collector
+2024-04-20 16:26:34 - INFO - Measurement dispatched successfully.

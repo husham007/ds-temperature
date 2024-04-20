@@ -1137,3 +1137,25 @@
 2024-04-20 16:09:35 - ERROR - Error sending temperature data via websocket: [WinError 10054] An existing connection was forcibly closed by the remote host
 2024-04-20 16:09:39 - ERROR - Failed to connect to websocket server: [WinError 10061] No connection could be made because the target machine actively refused it
 2024-04-20 16:09:39 - INFO - Retrying connection in 20 seconds...
+2024-04-20 16:25:22 - INFO - Waiting for websocket connection...
+2024-04-20 16:25:22 - INFO - Received temperature measurement: 21, from country: USA, location: ISB, lt: 2.0, lg:3.0
+2024-04-20 16:25:22 - INFO - Putting temperature data into queue
+2024-04-20 16:25:26 - ERROR - Failed to connect to websocket server: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-04-20 16:25:26 - INFO - Retrying connection in 20 seconds...
+2024-04-20 16:25:27 - ERROR - Failed to connect to websocket server: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-04-20 16:25:27 - INFO - Retrying connection in 20 seconds...
+2024-04-20 16:25:34 - INFO - Received temperature measurement: 26, from country: USA, location: ISB, lt: 2.0, lg:3.0
+2024-04-20 16:25:34 - INFO - Putting temperature data into queue
+2024-04-20 16:25:50 - ERROR - Failed to connect to websocket server: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-04-20 16:25:50 - INFO - Retrying connection in 20 seconds...
+2024-04-20 16:25:51 - ERROR - Failed to connect to websocket server: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-04-20 16:25:51 - INFO - Retrying connection in 20 seconds...
+2024-04-20 16:26:04 - INFO - Received temperature measurement: 16, from country: USA, location: ISB, lt: 2.0, lg:3.0
+2024-04-20 16:26:04 - INFO - Putting temperature data into queue
+2024-04-20 16:26:10 - INFO - Connected to websocket server.
+2024-04-20 16:26:11 - INFO - Temperature data sent via websocket.
+2024-04-20 16:26:12 - INFO - Temperature data sent via websocket.
+2024-04-20 16:26:13 - INFO - Temperature data sent via websocket.
+2024-04-20 16:26:34 - INFO - Received temperature measurement: -42, from country: USA, location: ISB, lt: 2.0, lg:3.0
+2024-04-20 16:26:34 - INFO - Putting temperature data into queue
+2024-04-20 16:26:34 - INFO - Temperature data sent via websocket.

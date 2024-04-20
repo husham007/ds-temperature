@@ -4364,3 +4364,49 @@ websockets.exceptions.ConnectionClosedError: no close frame received or sent
 2024-04-20 16:08:52 - ERROR - Error sending data to Europe: [Errno 11001] getaddrinfo failed
 2024-04-20 16:09:08 - DEBUG - % sending keepalive ping
 2024-04-20 16:09:08 - DEBUG - > PING f0 c1 5b 66 [binary, 4 bytes]
+2024-04-20 16:26:05 - DEBUG - Using proactor: IocpProactor
+2024-04-20 16:26:05 - INFO - server listening on [::1]:8003
+2024-04-20 16:26:05 - INFO - server listening on 127.0.0.1:8003
+2024-04-20 16:26:10 - DEBUG - = connection is CONNECTING
+2024-04-20 16:26:10 - DEBUG - < GET / HTTP/1.1
+2024-04-20 16:26:10 - DEBUG - < Upgrade: websocket
+2024-04-20 16:26:10 - DEBUG - < Host: localhost:8003
+2024-04-20 16:26:10 - DEBUG - < Origin: http://localhost:8003
+2024-04-20 16:26:10 - DEBUG - < Sec-WebSocket-Key: fntUMQX1O1x5WOZ50mWZuQ==
+2024-04-20 16:26:10 - DEBUG - < Sec-WebSocket-Version: 13
+2024-04-20 16:26:10 - DEBUG - < Connection: Upgrade
+2024-04-20 16:26:10 - DEBUG - > HTTP/1.1 101 Switching Protocols
+2024-04-20 16:26:10 - DEBUG - > Upgrade: websocket
+2024-04-20 16:26:10 - DEBUG - > Connection: Upgrade
+2024-04-20 16:26:10 - DEBUG - > Sec-WebSocket-Accept: 3DAtisM/tEFPonm8rbT7l12DT+0=
+2024-04-20 16:26:10 - DEBUG - > Date: Sat, 20 Apr 2024 13:26:10 GMT
+2024-04-20 16:26:10 - DEBUG - > Server: Python/3.9 websockets/12.0
+2024-04-20 16:26:10 - INFO - connection open
+2024-04-20 16:26:10 - DEBUG - = connection is OPEN
+2024-04-20 16:26:10 - INFO - Waiting for message to arrive
+2024-04-20 16:26:11 - DEBUG - < TEXT '{"type": "temperature", "location": {"continent...de": 3.0}, "value": 21}' [141 bytes]
+2024-04-20 16:26:11 - INFO - Received temperature data: {"type": "temperature", "location": {"continent": "Europe", "country": "USA", "name": "ISB", "latitude": 2.0, "longitude": 3.0}, "value": 21}
+2024-04-20 16:26:11 - DEBUG - > TEXT 'Received: {"type": "temperature", "location": {...de": 3.0}, "value": 21}' [151 bytes]
+2024-04-20 16:26:11 - INFO - Waiting for message to arrive
+2024-04-20 16:26:12 - INFO - Transferred data to Europe queue
+2024-04-20 16:26:12 - DEBUG - < TEXT '{"type": "temperature", "location": {"continent...de": 3.0}, "value": 26}' [141 bytes]
+2024-04-20 16:26:12 - INFO - Received temperature data: {"type": "temperature", "location": {"continent": "Europe", "country": "USA", "name": "ISB", "latitude": 2.0, "longitude": 3.0}, "value": 26}
+2024-04-20 16:26:12 - DEBUG - > TEXT 'Received: {"type": "temperature", "location": {...de": 3.0}, "value": 26}' [151 bytes]
+2024-04-20 16:26:12 - INFO - Waiting for message to arrive
+2024-04-20 16:26:13 - INFO - Transferred data to Europe queue
+2024-04-20 16:26:13 - DEBUG - < TEXT '{"type": "temperature", "location": {"continent...de": 3.0}, "value": 16}' [141 bytes]
+2024-04-20 16:26:13 - INFO - Received temperature data: {"type": "temperature", "location": {"continent": "Europe", "country": "USA", "name": "ISB", "latitude": 2.0, "longitude": 3.0}, "value": 16}
+2024-04-20 16:26:13 - DEBUG - > TEXT 'Received: {"type": "temperature", "location": {...de": 3.0}, "value": 16}' [151 bytes]
+2024-04-20 16:26:13 - INFO - Waiting for message to arrive
+2024-04-20 16:26:14 - INFO - Transferred data to Europe queue
+2024-04-20 16:26:14 - ERROR - Error sending data to Europe: [Errno 11001] getaddrinfo failed
+2024-04-20 16:26:16 - ERROR - Error sending data to Europe: [Errno 11001] getaddrinfo failed
+2024-04-20 16:26:18 - ERROR - Error sending data to Europe: [Errno 11001] getaddrinfo failed
+2024-04-20 16:26:30 - DEBUG - % sending keepalive ping
+2024-04-20 16:26:30 - DEBUG - > PING 61 49 90 2e [binary, 4 bytes]
+2024-04-20 16:26:34 - DEBUG - < TEXT '{"type": "temperature", "location": {"continent...e": 3.0}, "value": -42}' [142 bytes]
+2024-04-20 16:26:34 - INFO - Received temperature data: {"type": "temperature", "location": {"continent": "Europe", "country": "USA", "name": "ISB", "latitude": 2.0, "longitude": 3.0}, "value": -42}
+2024-04-20 16:26:34 - DEBUG - > TEXT 'Received: {"type": "temperature", "location": {...e": 3.0}, "value": -42}' [152 bytes]
+2024-04-20 16:26:34 - INFO - Waiting for message to arrive
+2024-04-20 16:26:35 - INFO - Transferred data to Europe queue
+2024-04-20 16:26:36 - ERROR - Error sending data to Europe: [Errno 11001] getaddrinfo failed
