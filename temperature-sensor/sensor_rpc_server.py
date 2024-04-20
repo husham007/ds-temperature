@@ -31,9 +31,11 @@ console_handler.setFormatter(console_formatter)
 console_handler.setLevel(logging.INFO)
 logger.addHandler(console_handler)
 
+PORT = 8001
 
 class Location:
-    def __init__(self, country, name, latitude, longitude):
+    def __init__(self, continent, country, name, latitude, longitude):
+        self.continent = continent
         self.country = country
         self.name = name
         self.latitude = latitude
@@ -41,9 +43,9 @@ class Location:
 
 
 class Sensor:
-    def __init__(self, sensor_type, country, location_name, latitude, longitude):
+    def __init__(self, sensor_type, contient, country, location_name, latitude, longitude):
         self.type = sensor_type
-        self.location = Location(country, location_name, latitude, longitude)
+        self.location = Location(contient, country, location_name, latitude, longitude)
         self.measurement_queue = Queue()
         self.lock = threading.Lock()
         self.measure_thread_stop_event = threading.Event()
@@ -54,7 +56,7 @@ class Sensor:
 
     def read(self):
         logging.info(f"Reading measurement from sensor {self.type}")
-        return round(random.uniform(-50, 50), 2)
+        return round(random.uniform(-50, 50))
 
     def dispatch_measurement(self):
         logging.info("Dispatch measurement thread started")
@@ -72,10 +74,11 @@ class Sensor:
     def send_measurement(self, measurement):
         logging.info("Sending measurement to external API")
         # Simulating sending measurement to an external API via POST request
-        api_endpoint = "https://example.com/api/measurement"
+        api_endpoint = "http://127.0.0.1:8000/temperature-collector/"
         payload = {
             "type": self.type,
             "location": {
+                'continent': self.location.continent,
                 "country": self.location.country,
                 "name": self.location.name,
                 "latitude": self.location.latitude,
@@ -83,11 +86,14 @@ class Sensor:
             },
             "value": measurement
         }
-        """
+
         response = requests.post(api_endpoint, json=payload)
         if response.status_code != 200:
             logging.error(f"Failed to send measurement: {response.text}")
-        """
+        else:
+            logging.info(f"Measurement received by temperature collector")
+
+
 
     def measure(self):
         while not self.measure_thread_stop_event.is_set():
@@ -143,22 +149,24 @@ class Sensor:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 6:
-        print("Usage: python program.py <sensor_type> <country> <location_name> <latitude> <longitude>")
+    if len(sys.argv) != 8:
+        print("Usage: python program.py <address> <sensor_type> <continent> <country> <location_name> <latitude> <longitude>")
         sys.exit(1)
 
-    sensor_type = sys.argv[1]
-    country = sys.argv[2]
-    location_name = sys.argv[3]
-    latitude = float(sys.argv[4])
-    longitude = float(sys.argv[5])
+    address = sys.argv[1]
+    sensor_type = sys.argv[2]
+    continent = sys.argv[3]
+    country = sys.argv[4]
+    location_name = sys.argv[5]
+    latitude = float(sys.argv[6])
+    longitude = float(sys.argv[7])
 
-    sensor = Sensor(sensor_type, country, location_name, latitude, longitude)
+    sensor = Sensor(sensor_type, continent, country, location_name, latitude, longitude)
 
     # Create an XML-RPC server
-    server = SimpleXMLRPCServer(('localhost', 8000), allow_none=True)
+    server = SimpleXMLRPCServer((address, PORT), allow_none=True)
     server.register_instance(sensor)
-    logging.info("RPC server started.")
+    logging.info(f"RPC server started on port {PORT}.")
 
     while not sensor.server_stopped:
         server.handle_request()

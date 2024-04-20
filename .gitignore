@@ -1,1 +1,4 @@
 .idea/
+temperature-collector/temperature_monitoring/temperature_collector/__pycache__/
+temperature-collector/temperature_monitoring/temperature_collector/migrations/__pycache__/
+temperature-collector/temperature_monitoring/temperature_monitoring/__pycache__/

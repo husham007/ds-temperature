@@ -2,7 +2,7 @@ import time
 import xmlrpc.client
 
 # Connect to the XML-RPC server
-server = xmlrpc.client.ServerProxy('http://localhost:8000')
+server = xmlrpc.client.ServerProxy('http://localhost:8001')
 
 # Call methods exposed by the server
 try:
@@ -19,6 +19,7 @@ try:
     print("Sensor Information:")
     print(sensor_info)
 
+    """
     # Stop measurement reading
     server.stop_measurement()
     print("Measurement reading stopped.")
@@ -30,6 +31,6 @@ try:
     # Stop the XML-RPC server
     server.stop_server()
     print("XML-RPC server stopped.")
-
+    """
 except Exception as e:
     print(f"Error: {e}")
