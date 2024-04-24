@@ -44,11 +44,11 @@ CONTIENTS = {
 
 SERVERS = {
     'Europe': 'http://localhost:5000',
-    'Africa': 'http://localhost:5001',
-    'Asia': 'http://localhost:5002',
-    'North America': 'http://localhost:5003',
-    'South America': 'http://localhost:5004',
-    'Oceania': 'http://localhost:5005',
+    'Africa': 'http://localhost:5005',
+    'Asia': 'http://localhost:5001',
+    'North America': 'http://localhost:5002',
+    'South America': 'http://localhost:5003',
+    'Australia': 'http://localhost:5004',
     'Antarctica': 'http://localhost:5006'
 }
 

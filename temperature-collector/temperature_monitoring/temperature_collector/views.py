@@ -39,7 +39,7 @@ temperature_queue = Queue()
 temperature_queue_lock = threading.Lock()
 
 # Websocket configuration
-RING_MASTER_WEBSOCKET_URL = "ws://localhost:8003"
+RING_MASTER_WEBSOCKET_URL = "ws://localhost:9001"
 WEBSOCKET_TIMEOUT = 20  # Timeout for websocket connection retry (in seconds)
 
 ws_connection = None

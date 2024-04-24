@@ -694,3 +694,506 @@ NotImplementedError: Collection objects do not implement truth value testing or 
 2024-04-24 15:47:41 - INFO - Data inserted into MongoDB
 2024-04-24 15:47:43 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -47}
 2024-04-24 15:47:43 - INFO - Data inserted into MongoDB
+2024-04-24 15:57:51 - INFO - Waiting to receive messages in the queue
+2024-04-24 15:57:52 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 15:57:52 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 16:34:54 - INFO - Waiting to receive messages in the queue
+2024-04-24 16:34:55 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 16:34:56 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 16:39:23 - INFO - Waiting to receive messages in the queue
+2024-04-24 16:39:25 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 16:39:25 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:04:13 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:04:14 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:04:14 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:06:34 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:06:35 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:06:35 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:07:32 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:07:34 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 17:07:34 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:17:05 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 37}
+2024-04-24 17:17:05 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:05 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -21}
+2024-04-24 17:17:05 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:06 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 19}
+2024-04-24 17:17:06 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:06 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 49}
+2024-04-24 17:17:06 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:07 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -40}
+2024-04-24 17:17:07 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:08 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -21}
+2024-04-24 17:17:08 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:09 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 40}
+2024-04-24 17:17:09 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:10 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -34}
+2024-04-24 17:17:10 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:10 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 1}
+2024-04-24 17:17:10 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -36}
+2024-04-24 17:17:33 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:35 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 50}
+2024-04-24 17:17:35 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:17:36 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 4}
+2024-04-24 17:17:36 - ERROR - Error inserting data into MongoDB: 'NoneType' object has no attribute 'update_one'
+2024-04-24 17:18:30 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:18:31 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:18:31 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:18:33 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:18:34 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 17:18:34 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:18:35 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 20}
+2024-04-24 17:18:35 - ERROR - Error inserting data into MongoDB: 'str' object has no attribute 'update_one'
+2024-04-24 17:18:35 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -17}
+2024-04-24 17:18:35 - ERROR - Error inserting data into MongoDB: 'str' object has no attribute 'update_one'
+2024-04-24 17:18:36 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 3}
+2024-04-24 17:18:36 - ERROR - Error inserting data into MongoDB: 'str' object has no attribute 'update_one'
+2024-04-24 17:18:36 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -44}
+2024-04-24 17:18:36 - ERROR - Error inserting data into MongoDB: 'str' object has no attribute 'update_one'
+2024-04-24 17:18:37 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 40}
+2024-04-24 17:18:37 - ERROR - Error inserting data into MongoDB: 'str' object has no attribute 'update_one'
+2024-04-24 17:18:38 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -20}
+2024-04-24 17:18:38 - ERROR - Error inserting data into MongoDB: 'str' object has no attribute 'update_one'
+2024-04-24 17:20:03 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:20:04 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:20:04 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:20:06 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 24}
+2024-04-24 17:20:06 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:20:07 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 1}
+2024-04-24 17:20:07 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:20:08 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 7}
+2024-04-24 17:20:08 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:20:09 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -16}
+2024-04-24 17:20:09 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:20:10 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -4}
+2024-04-24 17:20:10 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:20:11 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -1}
+2024-04-24 17:20:11 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:20:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -40}
+2024-04-24 17:20:32 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:20:34 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 19}
+2024-04-24 17:20:34 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:21:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 18}
+2024-04-24 17:21:03 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:21:05 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 36}
+2024-04-24 17:21:05 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:21:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -12}
+2024-04-24 17:21:32 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:21:35 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -7}
+2024-04-24 17:21:35 - ERROR - Error inserting data into MongoDB: 'Collection' object is not callable. If you meant to call the 'update_one' method on a 'Database' object it is failing because no such method exists.
+2024-04-24 17:29:27 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:29:29 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:29:29 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:30:08 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 40}
+2024-04-24 17:30:09 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -14}
+2024-04-24 17:30:10 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -29}
+2024-04-24 17:30:11 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -25}
+2024-04-24 17:30:12 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 14}
+2024-04-24 17:30:13 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -11}
+2024-04-24 17:30:14 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 36}
+2024-04-24 17:30:15 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -32}
+2024-04-24 17:30:17 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -12}
+2024-04-24 17:30:18 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -44}
+2024-04-24 17:30:20 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -32}
+2024-04-24 17:30:21 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -28}
+2024-04-24 17:30:23 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -16}
+2024-04-24 17:30:24 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 46}
+2024-04-24 17:30:26 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 20}
+2024-04-24 17:30:27 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 14}
+2024-04-24 17:30:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -4}
+2024-04-24 17:30:30 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -40}
+2024-04-24 17:30:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 43}
+2024-04-24 17:30:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -9}
+2024-04-24 17:30:36 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -31}
+2024-04-24 17:30:37 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 49}
+2024-04-24 17:30:39 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 7}
+2024-04-24 17:30:40 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -46}
+2024-04-24 17:30:42 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -49}
+2024-04-24 17:30:43 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -26}
+2024-04-24 17:30:45 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -14}
+2024-04-24 17:30:46 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -7}
+2024-04-24 17:30:48 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -27}
+2024-04-24 17:30:49 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 37}
+2024-04-24 17:30:51 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -39}
+2024-04-24 17:30:52 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -27}
+2024-04-24 17:30:54 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 31}
+2024-04-24 17:30:55 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 33}
+2024-04-24 17:30:57 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 43}
+2024-04-24 17:30:58 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 3}
+2024-04-24 17:31:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 25}
+2024-04-24 17:31:08 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:31:10 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:31:10 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:31:11 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -29}
+2024-04-24 17:31:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -18}
+2024-04-24 17:31:35 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 21}
+2024-04-24 17:31:41 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:31:43 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:31:43 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:32:02 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 10}
+2024-04-24 17:32:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:32:06 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -6}
+2024-04-24 17:32:06 - INFO - Data inserted into MongoDB
+2024-04-24 17:32:17 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:32:18 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 17:32:18 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:32:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -24}
+2024-04-24 17:32:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:32:36 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 16}
+2024-04-24 17:32:36 - INFO - Data inserted into MongoDB
+2024-04-24 17:33:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -1}
+2024-04-24 17:33:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:33:05 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -1}
+2024-04-24 17:33:05 - INFO - Data inserted into MongoDB
+2024-04-24 17:33:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 17}
+2024-04-24 17:33:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:33:36 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -9}
+2024-04-24 17:33:36 - INFO - Data inserted into MongoDB
+2024-04-24 17:34:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -32}
+2024-04-24 17:34:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:34:06 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 8}
+2024-04-24 17:34:06 - INFO - Data inserted into MongoDB
+2024-04-24 17:34:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 0}
+2024-04-24 17:34:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:34:35 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 48}
+2024-04-24 17:34:35 - INFO - Data inserted into MongoDB
+2024-04-24 17:35:02 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:35:02 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -16}
+2024-04-24 17:35:02 - INFO - Data inserted into MongoDB
+2024-04-24 17:35:04 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 17:35:04 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:35:05 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -23}
+2024-04-24 17:35:05 - INFO - Data inserted into MongoDB
+2024-04-24 17:35:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 26}
+2024-04-24 17:35:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:35:36 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -21}
+2024-04-24 17:35:36 - INFO - Data inserted into MongoDB
+2024-04-24 17:36:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -12}
+2024-04-24 17:36:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:36:05 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 29}
+2024-04-24 17:36:05 - INFO - Data inserted into MongoDB
+2024-04-24 17:44:39 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:44:41 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 17:44:41 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:45:28 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:45:29 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:45:29 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:48:12 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:48:14 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:48:14 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:48:57 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:48:59 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 17:48:59 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:49:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 44}
+2024-04-24 17:49:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:49:34 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 30}
+2024-04-24 17:49:34 - INFO - Data inserted into MongoDB
+2024-04-24 17:49:36 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -25}
+2024-04-24 17:49:36 - INFO - Data inserted into MongoDB
+2024-04-24 17:49:59 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -32}
+2024-04-24 17:49:59 - INFO - Data inserted into MongoDB
+2024-04-24 17:50:01 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -44}
+2024-04-24 17:50:01 - INFO - Data inserted into MongoDB
+2024-04-24 17:50:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -49}
+2024-04-24 17:50:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:50:28 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 18}
+2024-04-24 17:50:28 - INFO - Data inserted into MongoDB
+2024-04-24 17:50:30 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 15}
+2024-04-24 17:50:30 - INFO - Data inserted into MongoDB
+2024-04-24 17:50:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 25}
+2024-04-24 17:50:32 - INFO - Data inserted into MongoDB
+2024-04-24 17:50:59 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -21}
+2024-04-24 17:50:59 - INFO - Data inserted into MongoDB
+2024-04-24 17:51:01 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 21}
+2024-04-24 17:51:01 - INFO - Data inserted into MongoDB
+2024-04-24 17:51:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 22}
+2024-04-24 17:51:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:51:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 2}
+2024-04-24 17:51:29 - INFO - Data inserted into MongoDB
+2024-04-24 17:51:31 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 13}
+2024-04-24 17:51:31 - INFO - Data inserted into MongoDB
+2024-04-24 17:51:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -6}
+2024-04-24 17:51:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:51:59 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 33}
+2024-04-24 17:51:59 - INFO - Data inserted into MongoDB
+2024-04-24 17:52:01 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -2}
+2024-04-24 17:52:01 - INFO - Data inserted into MongoDB
+2024-04-24 17:52:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -23}
+2024-04-24 17:52:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:52:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 42}
+2024-04-24 17:52:29 - INFO - Data inserted into MongoDB
+2024-04-24 17:52:31 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 44}
+2024-04-24 17:52:31 - INFO - Data inserted into MongoDB
+2024-04-24 17:52:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 47}
+2024-04-24 17:52:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:53:10 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:53:12 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 17:53:12 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:53:17 - INFO - Waiting to receive messages in the queue
+2024-04-24 17:53:18 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -41}
+2024-04-24 17:53:18 - INFO - Data inserted into MongoDB
+2024-04-24 17:53:19 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 17:53:19 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 17:53:19 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 14}
+2024-04-24 17:53:19 - INFO - Data inserted into MongoDB
+2024-04-24 17:53:21 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 4}
+2024-04-24 17:53:21 - INFO - Data inserted into MongoDB
+2024-04-24 17:53:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 20}
+2024-04-24 17:53:29 - INFO - Data inserted into MongoDB
+2024-04-24 17:53:31 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -5}
+2024-04-24 17:53:31 - INFO - Data inserted into MongoDB
+2024-04-24 17:53:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -24}
+2024-04-24 17:53:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:53:59 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 50}
+2024-04-24 17:53:59 - INFO - Data inserted into MongoDB
+2024-04-24 17:54:01 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -41}
+2024-04-24 17:54:01 - INFO - Data inserted into MongoDB
+2024-04-24 17:54:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -41}
+2024-04-24 17:54:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:54:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -32}
+2024-04-24 17:54:29 - INFO - Data inserted into MongoDB
+2024-04-24 17:54:31 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 21}
+2024-04-24 17:54:31 - INFO - Data inserted into MongoDB
+2024-04-24 17:54:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -36}
+2024-04-24 17:54:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:54:59 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 15}
+2024-04-24 17:54:59 - INFO - Data inserted into MongoDB
+2024-04-24 17:55:01 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -50}
+2024-04-24 17:55:01 - INFO - Data inserted into MongoDB
+2024-04-24 17:55:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -41}
+2024-04-24 17:55:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:55:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -11}
+2024-04-24 17:55:29 - INFO - Data inserted into MongoDB
+2024-04-24 17:55:31 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -22}
+2024-04-24 17:55:32 - INFO - Data inserted into MongoDB
+2024-04-24 17:55:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 17}
+2024-04-24 17:55:34 - INFO - Data inserted into MongoDB
+2024-04-24 17:55:59 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -15}
+2024-04-24 17:55:59 - INFO - Data inserted into MongoDB
+2024-04-24 17:56:01 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -8}
+2024-04-24 17:56:01 - INFO - Data inserted into MongoDB
+2024-04-24 17:56:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 38}
+2024-04-24 17:56:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:56:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 43}
+2024-04-24 17:56:29 - INFO - Data inserted into MongoDB
+2024-04-24 17:56:31 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -28}
+2024-04-24 17:56:31 - INFO - Data inserted into MongoDB
+2024-04-24 17:56:33 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -9}
+2024-04-24 17:56:33 - INFO - Data inserted into MongoDB
+2024-04-24 17:56:58 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -37}
+2024-04-24 17:56:58 - INFO - Data inserted into MongoDB
+2024-04-24 17:57:00 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -41}
+2024-04-24 17:57:00 - INFO - Data inserted into MongoDB
+2024-04-24 17:57:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -23}
+2024-04-24 17:57:03 - INFO - Data inserted into MongoDB
+2024-04-24 17:57:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 6}
+2024-04-24 17:57:29 - INFO - Data inserted into MongoDB
+2024-04-24 17:57:31 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 26}
+2024-04-24 17:57:31 - INFO - Data inserted into MongoDB
+2024-04-24 17:57:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 14}
+2024-04-24 17:57:32 - INFO - Data inserted into MongoDB
+2024-04-24 17:58:00 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -7}
+2024-04-24 17:58:00 - INFO - Data inserted into MongoDB
+2024-04-24 17:58:02 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 41}
+2024-04-24 17:58:02 - INFO - Data inserted into MongoDB
+2024-04-24 17:58:04 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -13}
+2024-04-24 17:58:04 - INFO - Data inserted into MongoDB
+2024-04-24 17:58:05 - ERROR - Exception on /temperature [GET]
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\app.py", line 135, in get_temperature
+    data = DatabaseManager.get_by_location(_continent, country, location)
+TypeError: get_by_location() missing 1 required positional argument: 'location'
+2024-04-24 17:58:06 - INFO - 127.0.0.1 - - [24/Apr/2024 17:58:06] "[35m[1mGET /temperature?continent=Europe&country=Finland&name=Helsinki HTTP/1.1[0m" 500 -
+2024-04-24 17:58:17 - ERROR - Exception on /temperature [GET]
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\app.py", line 135, in get_temperature
+    data = DatabaseManager.get_by_location(_continent, country, location)
+TypeError: get_by_location() missing 1 required positional argument: 'location'
+2024-04-24 17:58:17 - INFO - 127.0.0.1 - - [24/Apr/2024 17:58:17] "[35m[1mGET /temperature?continent=Asia&country=China&name=Beijing HTTP/1.1[0m" 500 -
+2024-04-24 17:58:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 49}
+2024-04-24 17:58:29 - INFO - Data inserted into MongoDB
+2024-04-24 17:58:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 4}
+2024-04-24 17:58:32 - INFO - Data inserted into MongoDB
+2024-04-24 17:58:34 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 31}
+2024-04-24 17:58:34 - INFO - Data inserted into MongoDB
+2024-04-24 17:59:00 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 19}
+2024-04-24 17:59:00 - INFO - Data inserted into MongoDB
+2024-04-24 17:59:02 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 8}
+2024-04-24 17:59:02 - INFO - Data inserted into MongoDB
+2024-04-24 17:59:04 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -37}
+2024-04-24 17:59:04 - INFO - Data inserted into MongoDB
+2024-04-24 17:59:30 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 16}
+2024-04-24 17:59:30 - INFO - Data inserted into MongoDB
+2024-04-24 17:59:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 27}
+2024-04-24 17:59:32 - INFO - Data inserted into MongoDB
+2024-04-24 17:59:34 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -10}
+2024-04-24 17:59:34 - INFO - Data inserted into MongoDB
+2024-04-24 17:59:59 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 10}
+2024-04-24 17:59:59 - INFO - Data inserted into MongoDB
+2024-04-24 18:00:02 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -13}
+2024-04-24 18:00:02 - INFO - Data inserted into MongoDB
+2024-04-24 18:00:04 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -25}
+2024-04-24 18:00:04 - INFO - Data inserted into MongoDB
+2024-04-24 18:00:15 - ERROR - Exception on /temperature [GET]
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\app.py", line 135, in get_temperature
+    data = DatabaseManager.get_by_location(_continent, country, location)
+TypeError: get_by_location() missing 1 required positional argument: 'location'
+2024-04-24 18:00:15 - INFO - 127.0.0.1 - - [24/Apr/2024 18:00:15] "[35m[1mGET /temperature?continent=Europe&country=Finland&name=Helsinki HTTP/1.1[0m" 500 -
+2024-04-24 18:00:30 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 47}
+2024-04-24 18:00:30 - INFO - Data inserted into MongoDB
+2024-04-24 18:00:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 11}
+2024-04-24 18:00:32 - INFO - Data inserted into MongoDB
+2024-04-24 18:00:34 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 17}
+2024-04-24 18:00:34 - INFO - Data inserted into MongoDB
+2024-04-24 18:01:00 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -14}
+2024-04-24 18:01:00 - INFO - Data inserted into MongoDB
+2024-04-24 18:01:02 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -46}
+2024-04-24 18:01:02 - INFO - Data inserted into MongoDB
+2024-04-24 18:01:05 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 37}
+2024-04-24 18:01:05 - INFO - Data inserted into MongoDB
+2024-04-24 18:01:30 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 4}
+2024-04-24 18:01:30 - INFO - Data inserted into MongoDB
+2024-04-24 18:01:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 6}
+2024-04-24 18:01:32 - INFO - Data inserted into MongoDB
+2024-04-24 18:01:34 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -50}
+2024-04-24 18:01:34 - INFO - Data inserted into MongoDB
+2024-04-24 18:01:45 - INFO - Waiting to receive messages in the queue
+2024-04-24 18:01:47 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 18:01:47 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 18:01:49 - INFO - Waiting to receive messages in the queue
+2024-04-24 18:01:51 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 18:01:51 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 18:02:00 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 39}
+2024-04-24 18:02:00 - INFO - Data inserted into MongoDB
+2024-04-24 18:02:02 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -49}
+2024-04-24 18:02:02 - INFO - Data inserted into MongoDB
+2024-04-24 18:02:03 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 10}
+2024-04-24 18:02:03 - INFO - Data inserted into MongoDB
+2024-04-24 18:02:25 - INFO - Data found {'_id': ObjectId('6628cc80e037e7701f0148e4'), 'longitude': 24.0, 'continent': 'Europe', 'country': 'Finland', 'latitude': 60.0, 'name': 'Helsinki', 'temperature': 39}
+2024-04-24 18:02:25 - INFO - 127.0.0.1 - - [24/Apr/2024 18:02:25] "GET /temperature?continent=Europe&country=Finland&name=Helsinki HTTP/1.1" 200 -
+2024-04-24 18:02:30 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 48}
+2024-04-24 18:02:30 - INFO - Data inserted into MongoDB
+2024-04-24 18:02:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": 35}
+2024-04-24 18:02:32 - INFO - Data inserted into MongoDB
+2024-04-24 18:02:34 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -16}
+2024-04-24 18:02:34 - INFO - Data inserted into MongoDB
+2024-04-24 18:02:35 - INFO - Data found {'_id': ObjectId('66291c00e037e7701f017703'), 'continent': 'Asia', 'country': 'China', 'latitude': 39.0, 'longitude': 116.0, 'name': 'Beijing', 'temperature': -16}
+2024-04-24 18:02:35 - INFO - 127.0.0.1 - - [24/Apr/2024 18:02:35] "GET /temperature?continent=Asia&country=China&name=Beijing HTTP/1.1" 200 -
+2024-04-24 18:02:57 - INFO - Data found {'_id': ObjectId('6628cc80e037e7701f0148e4'), 'longitude': 24.0, 'continent': 'Europe', 'country': 'Finland', 'latitude': 60.0, 'name': 'Helsinki', 'temperature': 48}
+2024-04-24 18:02:57 - INFO - 127.0.0.1 - - [24/Apr/2024 18:02:57] "GET /temperature?continent=Europe&country=Finland&name=Helsinki HTTP/1.1" 200 -
+2024-04-24 18:03:00 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": 29}
+2024-04-24 18:03:00 - INFO - Data inserted into MongoDB
+2024-04-24 18:03:02 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -23}
+2024-04-24 18:03:02 - INFO - Data inserted into MongoDB
+2024-04-24 18:03:04 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": 10}
+2024-04-24 18:03:04 - INFO - Data inserted into MongoDB
+2024-04-24 18:03:06 - INFO - Data found {'_id': ObjectId('6628fe6ee037e7701f016781'), 'name': 'Lahti', 'continent': 'Europe', 'country': 'Finland', 'latitude': 67.0, 'longitude': 26.0, 'temperature': -23}
+2024-04-24 18:03:06 - INFO - 127.0.0.1 - - [24/Apr/2024 18:03:06] "GET /temperature?continent=Europe&country=Finland&name=Lahti HTTP/1.1" 200 -
+2024-04-24 18:03:29 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Helsinki", "latitude": 60.0, "longitude": 24.0}, "value": -21}
+2024-04-24 18:03:29 - INFO - Data inserted into MongoDB
+2024-04-24 18:03:32 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Europe", "country": "Finland", "name": "Lahti", "latitude": 67.0, "longitude": 26.0}, "value": -16}
+2024-04-24 18:03:33 - INFO - Data inserted into MongoDB
+2024-04-24 18:03:34 - INFO - message arrived: {"type": "temperature", "location": {"continent": "Asia", "country": "China", "name": "Beijing", "latitude": 39.0, "longitude": 116.0}, "value": -12}
+2024-04-24 18:03:34 - INFO - Data inserted into MongoDB
+2024-04-24 18:04:46 - INFO - latitude: 39, longitude: 116
+2024-04-24 18:04:46 - ERROR - Exception on /temperature/latlong [GET]
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\continent\continent\app.py", line 150, in get_temperature_by_lat_long
+    data = DatabaseManager.get_by_latitude_longitude(latitude, longitude)
+TypeError: get_by_latitude_longitude() missing 1 required positional argument: 'longitude'
+2024-04-24 18:04:46 - INFO - 127.0.0.1 - - [24/Apr/2024 18:04:46] "[35m[1mGET /temperature/latlong?latitude=39&longitude=116 HTTP/1.1[0m" 500 -
+2024-04-24 18:05:28 - INFO - Waiting to receive messages in the queue
+2024-04-24 18:05:29 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-24 18:05:29 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 18:05:35 - INFO - Waiting to receive messages in the queue
+2024-04-24 18:05:37 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-04-24 18:05:37 - INFO - [33mPress CTRL+C to quit[0m
+2024-04-24 18:05:52 - INFO - latitude: 39, longitude: 116
+2024-04-24 18:05:52 - INFO - Data found {'_id': ObjectId('66291c00e037e7701f017703'), 'continent': 'Asia', 'country': 'China', 'latitude': 39.0, 'longitude': 116.0, 'name': 'Beijing', 'temperature': -12}
+2024-04-24 18:05:52 - INFO - 127.0.0.1 - - [24/Apr/2024 18:05:52] "GET /temperature/latlong?latitude=39&longitude=116 HTTP/1.1" 200 -
+2024-04-24 18:07:57 - INFO - latitude: 67, longitude: 26
+2024-04-24 18:07:57 - INFO - Data found {'_id': ObjectId('6628fe6ee037e7701f016781'), 'name': 'Lahti', 'continent': 'Europe', 'country': 'Finland', 'latitude': 67.0, 'longitude': 26.0, 'temperature': -16}
+2024-04-24 18:07:57 - INFO - 127.0.0.1 - - [24/Apr/2024 18:07:57] "GET /temperature/latlong?latitude=67&longitude=26 HTTP/1.1" 200 -
+2024-04-24 18:09:33 - INFO - latitude: 60, longitude: 24
+2024-04-24 18:09:33 - INFO - Data found {'_id': ObjectId('6628cc80e037e7701f0148e4'), 'longitude': 24.0, 'continent': 'Europe', 'country': 'Finland', 'latitude': 60.0, 'name': 'Helsinki', 'temperature': -21}
+2024-04-24 18:09:33 - INFO - 127.0.0.1 - - [24/Apr/2024 18:09:33] "GET /temperature/latlong?latitude=60&longitude=24 HTTP/1.1" 200 -
+2024-04-24 18:12:20 - INFO - latitude: 60, longitude: 24
+2024-04-24 18:12:20 - INFO - Data found {'_id': ObjectId('6628cc80e037e7701f0148e4'), 'longitude': 24.0, 'continent': 'Europe', 'country': 'Finland', 'latitude': 60.0, 'name': 'Helsinki', 'temperature': -21}
+2024-04-24 18:12:20 - INFO - 127.0.0.1 - - [24/Apr/2024 18:12:20] "GET /temperature/latlong?latitude=60&longitude=24 HTTP/1.1" 200 -
+2024-04-24 18:12:28 - INFO - Data found {'_id': ObjectId('6628fe6ee037e7701f016781'), 'name': 'Lahti', 'continent': 'Europe', 'country': 'Finland', 'latitude': 67.0, 'longitude': 26.0, 'temperature': -16}
+2024-04-24 18:12:28 - INFO - 127.0.0.1 - - [24/Apr/2024 18:12:28] "GET /temperature?continent=Europe&country=Finland&name=Lahti HTTP/1.1" 200 -
+2024-04-24 18:12:34 - INFO - Data found {'_id': ObjectId('6628cc80e037e7701f0148e4'), 'longitude': 24.0, 'continent': 'Europe', 'country': 'Finland', 'latitude': 60.0, 'name': 'Helsinki', 'temperature': -21}
+2024-04-24 18:12:34 - INFO - 127.0.0.1 - - [24/Apr/2024 18:12:34] "GET /temperature?continent=Europe&country=Finland&name=Helsinki HTTP/1.1" 200 -
+2024-04-24 18:12:45 - INFO - Data found {'_id': ObjectId('66291c00e037e7701f017703'), 'continent': 'Asia', 'country': 'China', 'latitude': 39.0, 'longitude': 116.0, 'name': 'Beijing', 'temperature': -12}
+2024-04-24 18:12:45 - INFO - 127.0.0.1 - - [24/Apr/2024 18:12:45] "GET /temperature?continent=Asia&country=China&name=Beijing HTTP/1.1" 200 -
+2024-04-24 18:12:56 - INFO - Data found {'_id': ObjectId('6628cc80e037e7701f0148e4'), 'longitude': 24.0, 'continent': 'Europe', 'country': 'Finland', 'latitude': 60.0, 'name': 'Helsinki', 'temperature': -21}
+2024-04-24 18:12:56 - INFO - 127.0.0.1 - - [24/Apr/2024 18:12:56] "GET /temperature?continent=Europe&country=Finland&name=Helsinki HTTP/1.1" 200 -
+2024-04-24 18:13:04 - INFO - Data found {'_id': ObjectId('66291c00e037e7701f017703'), 'continent': 'Asia', 'country': 'China', 'latitude': 39.0, 'longitude': 116.0, 'name': 'Beijing', 'temperature': -12}
+2024-04-24 18:13:04 - INFO - 127.0.0.1 - - [24/Apr/2024 18:13:04] "GET /temperature?continent=Asia&country=China&name=Beijing HTTP/1.1" 200 -
+2024-04-24 18:23:45 - INFO - Data found {'_id': ObjectId('66291c00e037e7701f017703'), 'continent': 'Asia', 'country': 'China', 'latitude': 39.0, 'longitude': 116.0, 'name': 'Beijing', 'temperature': -12}
+2024-04-24 18:23:45 - INFO - 127.0.0.1 - - [24/Apr/2024 18:23:45] "GET /temperature?continent=Asia&country=China&name=Beijing HTTP/1.1" 200 -
+2024-04-24 18:23:56 - INFO - Data found {'_id': ObjectId('6628cc80e037e7701f0148e4'), 'longitude': 24.0, 'continent': 'Europe', 'country': 'Finland', 'latitude': 60.0, 'name': 'Helsinki', 'temperature': -21}
+2024-04-24 18:23:56 - INFO - 127.0.0.1 - - [24/Apr/2024 18:23:56] "GET /temperature?continent=Europe&country=Finland&name=Helsinki HTTP/1.1" 200 -
+2024-04-24 18:24:09 - INFO - Data found {'_id': ObjectId('66291c00e037e7701f017703'), 'continent': 'Asia', 'country': 'China', 'latitude': 39.0, 'longitude': 116.0, 'name': 'Beijing', 'temperature': -12}
+2024-04-24 18:24:09 - INFO - 127.0.0.1 - - [24/Apr/2024 18:24:09] "GET /temperature?continent=Asia&country=China&name=Beijing HTTP/1.1" 200 -
+2024-04-24 18:24:17 - INFO - Data found {'_id': ObjectId('6628cc80e037e7701f0148e4'), 'longitude': 24.0, 'continent': 'Europe', 'country': 'Finland', 'latitude': 60.0, 'name': 'Helsinki', 'temperature': -21}
+2024-04-24 18:24:17 - INFO - 127.0.0.1 - - [24/Apr/2024 18:24:17] "GET /temperature?continent=Europe&country=Finland&name=Helsinki HTTP/1.1" 200 -
+2024-04-24 18:24:25 - INFO - Data found {'_id': ObjectId('6628fe6ee037e7701f016781'), 'name': 'Lahti', 'continent': 'Europe', 'country': 'Finland', 'latitude': 67.0, 'longitude': 26.0, 'temperature': -16}
+2024-04-24 18:24:25 - INFO - 127.0.0.1 - - [24/Apr/2024 18:24:25] "GET /temperature?continent=Europe&country=Finland&name=Lahti HTTP/1.1" 200 -

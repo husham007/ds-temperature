@@ -619,3 +619,116 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5
 2024-04-24 15:46:29,482 - INFO - Country Finland found
 2024-04-24 15:46:29,483 - INFO - Continent EU found
 2024-04-24 15:46:29,484 - INFO - Continent Europe found
+2024-04-24 17:54:47,033 - INFO - Continent AS found
+2024-04-24 17:54:47,034 - INFO - Continent Asia found
+2024-04-24 17:54:51,088 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /temperature?continent=Asia&country=China&name=Beijing (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029A187DF220>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1040, in _send_output
+    self.send(msg)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 980, in send
+    self.connect()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000029A187DF220>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /temperature?continent=Asia&country=China&name=Beijing (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029A187DF220>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 77, in request_handler
+    response = requests.get(continent_api_url, params={'continent': continent, 'country': country, 'name': name})
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /temperature?continent=Asia&country=China&name=Beijing (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000029A187DF220>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-24 17:58:03,826 - INFO - Continent EU found
+2024-04-24 17:58:03,827 - INFO - Continent Europe found
+2024-04-24 17:58:06,311 - ERROR - Failed to get temperature from continent API: 500
+2024-04-24 17:58:15,213 - INFO - Continent AS found
+2024-04-24 17:58:15,213 - INFO - Continent Asia found
+2024-04-24 17:58:17,687 - ERROR - Failed to get temperature from continent API: 500
+2024-04-24 18:00:13,278 - INFO - Continent EU found
+2024-04-24 18:00:13,279 - INFO - Continent Europe found
+2024-04-24 18:00:15,458 - ERROR - Failed to get temperature from continent API: 500
+2024-04-24 18:02:23,572 - INFO - Continent EU found
+2024-04-24 18:02:23,574 - INFO - Continent Europe found
+2024-04-24 18:02:33,300 - INFO - Continent AS found
+2024-04-24 18:02:33,301 - INFO - Continent Asia found
+2024-04-24 18:02:55,647 - INFO - Continent EU found
+2024-04-24 18:02:55,648 - INFO - Continent Europe found
+2024-04-24 18:03:04,235 - INFO - Continent EU found
+2024-04-24 18:03:04,236 - INFO - Continent Europe found
+2024-04-24 18:04:44,080 - INFO - Country China found
+2024-04-24 18:04:44,082 - INFO - Continent AS found
+2024-04-24 18:04:44,083 - INFO - Continent Asia found
+2024-04-24 18:04:46,488 - ERROR - Failed to get temperature from continent API: 500
+2024-04-24 18:05:50,549 - INFO - Country China found
+2024-04-24 18:05:50,550 - INFO - Continent AS found
+2024-04-24 18:05:50,551 - INFO - Continent Asia found
+2024-04-24 18:07:55,290 - INFO - Country Finland found
+2024-04-24 18:07:55,291 - INFO - Continent EU found
+2024-04-24 18:07:55,292 - INFO - Continent Europe found
+2024-04-24 18:09:31,060 - INFO - Country Finland found
+2024-04-24 18:09:31,061 - INFO - Continent EU found
+2024-04-24 18:09:31,061 - INFO - Continent Europe found
+2024-04-24 18:12:18,615 - INFO - Country Finland found
+2024-04-24 18:12:18,617 - INFO - Continent EU found
+2024-04-24 18:12:18,618 - INFO - Continent Europe found
+2024-04-24 18:12:25,929 - INFO - Continent EU found
+2024-04-24 18:12:25,934 - INFO - Continent Europe found
+2024-04-24 18:12:31,951 - INFO - Continent EU found
+2024-04-24 18:12:31,952 - INFO - Continent Europe found
+2024-04-24 18:12:42,872 - INFO - Continent AS found
+2024-04-24 18:12:42,872 - INFO - Continent Asia found
+2024-04-24 18:12:54,680 - INFO - Continent EU found
+2024-04-24 18:12:54,681 - INFO - Continent Europe found
+2024-04-24 18:13:02,062 - INFO - Continent AS found
+2024-04-24 18:13:02,063 - INFO - Continent Asia found
+2024-04-24 18:23:43,548 - INFO - Continent AS found
+2024-04-24 18:23:43,557 - INFO - Continent Asia found
+2024-04-24 18:23:54,122 - INFO - Continent EU found
+2024-04-24 18:23:54,123 - INFO - Continent Europe found
+2024-04-24 18:24:06,975 - INFO - Continent AS found
+2024-04-24 18:24:06,976 - INFO - Continent Asia found
+2024-04-24 18:24:15,751 - INFO - Continent EU found
+2024-04-24 18:24:15,753 - INFO - Continent Europe found
+2024-04-24 18:24:23,591 - INFO - Continent EU found
+2024-04-24 18:24:23,592 - INFO - Continent Europe found

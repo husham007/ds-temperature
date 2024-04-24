@@ -101,7 +101,7 @@ class Sensor:
             measurement = self.read()
             logging.info(f"Reading measurement from sensor {measurement}")
             self.measurement_queue.put(measurement)
-            time.sleep(30)
+            time.sleep(60)
         logging.info("Measurement reading thread stopped.")
 
     def start_measurement(self):

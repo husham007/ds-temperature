@@ -1,3 +1,4 @@
+import sys
 import threading
 
 from flask import Flask, request, jsonify
@@ -19,19 +20,18 @@ logging.basicConfig(level=logging.DEBUG,
                         logging.StreamHandler()
                     ])
 
-# Connect to MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['continent']
-continent = db['continent']
-
-WEBSOCKET_SERVER_PORT = 8008
+database_manager = None
 
 
 class DatabaseManager:
-    @staticmethod
-    def post(data):
+    def __init__(self, continent_collection):
+        self.client = MongoClient('mongodb://localhost:27017/')
+        self.db = self.client['continent']
+        self.continent = self.db[continent_collection]
+
+    def post(self, data):
         try:
-            continent.update_one(
+            self.continent.update_one(
                 {'continent': data.get('continent'), 'country': data.get('country'), 'name': data.get('name'),
                  'latitude': data.get('latitude'), 'longitude': data.get('longitude')}, {
                     '$set': data}, upsert=True)
@@ -39,10 +39,9 @@ class DatabaseManager:
         except Exception as e:
             logging.error(f"Error inserting data into MongoDB: {e}")
 
-    @staticmethod
-    def get_by_location(_continent, country, location):
+    def get_by_location(self, _continent, country, location):
         try:
-            data = continent.find_one({
+            data = self.continent.find_one({
                 'continent': _continent,
                 'country': country,
                 'name': location
@@ -56,10 +55,9 @@ class DatabaseManager:
             logging.error(f"Error retrieving data from MongoDB: {e}")
             return None
 
-    @staticmethod
-    def get_by_latitude_longitude(latitude, longitude):
+    def get_by_latitude_longitude(self, latitude, longitude):
         try:
-            data = continent.find_one({
+            data = self.continent.find_one({
                 'latitude': int(latitude),
                 'longitude': int(longitude)
             })
@@ -111,7 +109,7 @@ def process_queue():
             temperature = data.get('value')
 
             # Save parsed message into MongoDB
-            DatabaseManager.post({'continent': _continent, 'country': country, 'name': name, 'latitude': latitude,
+            database_manager.post({'continent': _continent, 'country': country, 'name': name, 'latitude': latitude,
                                   'longitude': longitude, 'temperature': temperature})
 
 
@@ -134,7 +132,7 @@ def get_temperature():
     longitude = request.args.get('longitude')
 
     if _continent and country and location:
-        data = DatabaseManager.get_by_location(_continent, country, location)
+        data = database_manager.get_by_location(_continent, country, location)
         if data is not None:
             return jsonify(data), 200
         else:
@@ -149,7 +147,7 @@ def get_temperature_by_lat_long():
     longitude = request.args.get('longitude')
     logging.info(f"latitude: {latitude}, longitude: {longitude}")
     if latitude and longitude:
-        data = DatabaseManager.get_by_latitude_longitude(latitude, longitude)
+        data = database_manager.get_by_latitude_longitude(latitude, longitude)
         if data is not None:
             return jsonify(data), 200
         else:
@@ -159,4 +157,10 @@ def get_temperature_by_lat_long():
 
 
 if __name__ == '__main__':
-    socketio.run(app)
+    if len(sys.argv) != 3:
+        print("Usage: python app.py <continent_name> <port>")
+        sys.exit(1)
+
+    database_manager = DatabaseManager(sys.argv[1])
+    port = sys.argv[2]
+    socketio.run(app, port=port)

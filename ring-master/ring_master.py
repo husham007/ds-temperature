@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.DEBUG,
                         logging.FileHandler('ring_master.log'),
                         logging.StreamHandler()
                     ])
-COLLECTOR_SERVER_PORT = 8003
+COLLECTOR_SERVER_PORT = 9001
 
 
 class Continent:
@@ -52,13 +52,13 @@ global_queue_lock = threading.Lock()
 
 # Create instances of Continent class
 continents = [
-    Continent("Asia", "ws://localhost:8005"),
-    Continent("North America", "ws://localhost:8006"),
-    Continent("South America", "ws://localhost:8007"),
+    Continent("Asia", "http://localhost:5001"),
+    Continent("North America", "http://localhost:5002"),
+    Continent("South America", "http://localhost:5003"),
     Continent("Europe", "http://localhost:5000"),
-    Continent("Australia", "ws://localhost:8009"),
-    Continent("Africa", "ws://localhost:8010"),
-    Continent("Antarctica", "ws://localhost:8011")
+    Continent("Australia", "http://localhost:5004"),
+    Continent("Africa", "http://localhost:5005"),
+    Continent("Antarctica", "http://localhost:5006")
 ]
 
 

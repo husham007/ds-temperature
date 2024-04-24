@@ -175,7 +175,10 @@ function setWeatherIcon(temperature) {
         weatherIconElement.style.backgroundImage = "url('hot-weather-icon.png')";
     } else if (temperature > 15) {
         weatherIconElement.style.backgroundImage = "url('moderate-weather-icon.png')";
-    } else {
+    } else if (temperature > 0)  {
         weatherIconElement.style.backgroundImage = "url('cold-weather-icon.png')";
+    }
+    else {
+         weatherIconElement.style.backgroundImage = "url('icon-weather-snowheavy.png')";
     }
 }
