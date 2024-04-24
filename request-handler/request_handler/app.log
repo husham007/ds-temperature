@@ -1,0 +1,621 @@
+2024-04-24 11:40:33,218 - ERROR - An error occurred: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 60, in request_handler
+    data = request.json
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\werkzeug\wrappers\request.py", line 558, in json
+    return self.get_json()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\werkzeug\wrappers\request.py", line 604, in get_json
+    return self.on_json_loading_failed(None)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\werkzeug\wrappers\request.py", line 647, in on_json_loading_failed
+    raise UnsupportedMediaType(
+werkzeug.exceptions.UnsupportedMediaType: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2024-04-24 11:44:29,651 - INFO - Country Finland found
+2024-04-24 11:44:29,652 - ERROR - An error occurred: "Invalid Country Alpha-2 code: 'Finland'"
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 92, in request_handler
+    continent_code = country_alpha2_to_continent_code(country_name)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\pycountry_convert\convert_country_alpha2_to_continent_code.py", line 262, in country_alpha2_to_continent_code
+    raise KeyError("Invalid Country Alpha-2 code: '{0}'".format(country_2_code))
+KeyError: "Invalid Country Alpha-2 code: 'Finland'"
+2024-04-24 11:50:22,494 - ERROR - An error occurred: Non-successful status code 403
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 368, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 472, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 500, in _request
+    raise AdapterHTTPError(
+geopy.adapters.AdapterHTTPError: Non-successful status code 403
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 90, in request_handler
+    country_name = find_country_name(float(latitude), float(longitude))
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 11, in find_country_name
+    location = geolocator.reverse((latitude, longitude), language='en')
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\nominatim.py", line 372, in reverse
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 388, in _call_geocoder
+    res = self._adapter_error_handler(error)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 411, in _adapter_error_handler
+    raise exc_cls(str(error)) from error
+geopy.exc.GeocoderInsufficientPrivileges: Non-successful status code 403
+2024-04-24 11:53:22,152 - ERROR - An error occurred: Non-successful status code 403
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 368, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 472, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 500, in _request
+    raise AdapterHTTPError(
+geopy.adapters.AdapterHTTPError: Non-successful status code 403
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 90, in request_handler
+    country_name = find_country_name(float(latitude), float(longitude))
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 11, in find_country_name
+    location = geolocator.reverse((latitude, longitude), language='en')
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\nominatim.py", line 372, in reverse
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 388, in _call_geocoder
+    res = self._adapter_error_handler(error)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 411, in _adapter_error_handler
+    raise exc_cls(str(error)) from error
+geopy.exc.GeocoderInsufficientPrivileges: Non-successful status code 403
+2024-04-24 11:55:56,729 - ERROR - An error occurred: Non-successful status code 403
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 368, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 472, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 500, in _request
+    raise AdapterHTTPError(
+geopy.adapters.AdapterHTTPError: Non-successful status code 403
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 89, in request_handler
+    country_name = find_country_name(float(latitude), float(longitude))
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 10, in find_country_name
+    location = geolocator.reverse((latitude, longitude), language='en')
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\nominatim.py", line 372, in reverse
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 388, in _call_geocoder
+    res = self._adapter_error_handler(error)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 411, in _adapter_error_handler
+    raise exc_cls(str(error)) from error
+geopy.exc.GeocoderInsufficientPrivileges: Non-successful status code 403
+2024-04-24 11:57:37,427 - ERROR - An error occurred: Non-successful status code 403
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 368, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 472, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 500, in _request
+    raise AdapterHTTPError(
+geopy.adapters.AdapterHTTPError: Non-successful status code 403
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 89, in request_handler
+    country_name = find_country_name(float(latitude), float(longitude))
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 10, in find_country_name
+    location = geolocator.reverse((latitude, longitude), language='en')
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\nominatim.py", line 372, in reverse
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 388, in _call_geocoder
+    res = self._adapter_error_handler(error)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 411, in _adapter_error_handler
+    raise exc_cls(str(error)) from error
+geopy.exc.GeocoderInsufficientPrivileges: Non-successful status code 403
+2024-04-24 12:01:51,367 - ERROR - An error occurred: Non-successful status code 403
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 368, in _call_geocoder
+    result = self.adapter.get_json(url, timeout=timeout, headers=req_headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 472, in get_json
+    resp = self._request(url, timeout=timeout, headers=headers)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\adapters.py", line 500, in _request
+    raise AdapterHTTPError(
+geopy.adapters.AdapterHTTPError: Non-successful status code 403
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 89, in request_handler
+    country_name = find_country_name(float(latitude), float(longitude))
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 10, in find_country_name
+    location = geolocator.reverse((latitude, longitude), language='en')
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\nominatim.py", line 372, in reverse
+    return self._call_geocoder(url, callback, timeout=timeout)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 388, in _call_geocoder
+    res = self._adapter_error_handler(error)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\geopy\geocoders\base.py", line 411, in _adapter_error_handler
+    raise exc_cls(str(error)) from error
+geopy.exc.GeocoderInsufficientPrivileges: Non-successful status code 403
+2024-04-24 12:02:47,603 - INFO - Country Finland found
+2024-04-24 12:02:47,604 - INFO - Continent EU found
+2024-04-24 12:02:47,605 - INFO - Continent Europe found
+2024-04-24 12:02:50,187 - ERROR - Failed to get temperature from continent API: 404
+2024-04-24 12:06:43,717 - INFO - Country Finland found
+2024-04-24 12:06:43,719 - INFO - Continent EU found
+2024-04-24 12:06:43,721 - INFO - Continent Europe found
+2024-04-24 12:06:46,033 - ERROR - Failed to get temperature from continent API: 404
+2024-04-24 12:10:42,843 - INFO - Country Finland found
+2024-04-24 12:10:42,850 - INFO - Continent EU found
+2024-04-24 12:10:42,852 - INFO - Continent Europe found
+2024-04-24 12:10:51,383 - INFO - Country Finland found
+2024-04-24 12:10:51,384 - INFO - Continent EU found
+2024-04-24 12:10:51,384 - INFO - Continent Europe found
+2024-04-24 12:10:58,772 - INFO - Country Finland found
+2024-04-24 12:10:58,773 - INFO - Continent EU found
+2024-04-24 12:10:58,774 - INFO - Continent Europe found
+2024-04-24 12:11:04,352 - INFO - Country Finland found
+2024-04-24 12:11:04,353 - INFO - Continent EU found
+2024-04-24 12:11:04,355 - INFO - Continent Europe found
+2024-04-24 12:11:11,139 - INFO - Country Finland found
+2024-04-24 12:11:11,140 - INFO - Continent EU found
+2024-04-24 12:11:11,141 - INFO - Continent Europe found
+2024-04-24 12:11:18,642 - INFO - Country Finland found
+2024-04-24 12:11:18,643 - INFO - Continent EU found
+2024-04-24 12:11:18,644 - INFO - Continent Europe found
+2024-04-24 12:11:22,830 - INFO - Country Finland found
+2024-04-24 12:11:22,830 - INFO - Continent EU found
+2024-04-24 12:11:22,831 - INFO - Continent Europe found
+2024-04-24 12:11:26,958 - INFO - Country Finland found
+2024-04-24 12:11:26,959 - INFO - Continent EU found
+2024-04-24 12:11:26,960 - INFO - Continent Europe found
+2024-04-24 12:12:00,289 - INFO - Country Finland found
+2024-04-24 12:12:00,290 - INFO - Continent EU found
+2024-04-24 12:12:00,291 - INFO - Continent Europe found
+2024-04-24 12:14:29,852 - ERROR - An error occurred: "Invalid Country Alpha-2 code: 'Finland'"
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 67, in request_handler
+    continent_code = country_alpha2_to_continent_code(country)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\pycountry_convert\convert_country_alpha2_to_continent_code.py", line 262, in country_alpha2_to_continent_code
+    raise KeyError("Invalid Country Alpha-2 code: '{0}'".format(country_2_code))
+KeyError: "Invalid Country Alpha-2 code: 'Finland'"
+2024-04-24 12:20:52,423 - INFO - Continent EU found
+2024-04-24 12:20:52,425 - INFO - Continent Europe found
+2024-04-24 12:20:54,780 - ERROR - Failed to get temperature from continent API: 400
+2024-04-24 12:24:19,463 - INFO - Continent EU found
+2024-04-24 12:24:19,466 - INFO - Continent Europe found
+2024-04-24 12:24:21,624 - ERROR - Failed to get temperature from continent API: 400
+2024-04-24 12:26:13,377 - INFO - Continent EU found
+2024-04-24 12:26:13,378 - INFO - Continent Europe found
+2024-04-24 12:26:23,837 - INFO - Continent EU found
+2024-04-24 12:26:23,838 - INFO - Continent Europe found
+2024-04-24 12:27:02,501 - INFO - Continent EU found
+2024-04-24 12:27:02,502 - INFO - Continent Europe found
+2024-04-24 12:28:18,569 - INFO - Country Finland found
+2024-04-24 12:28:18,570 - INFO - Continent EU found
+2024-04-24 12:28:18,570 - INFO - Continent Europe found
+2024-04-24 12:28:32,564 - INFO - Continent EU found
+2024-04-24 12:28:32,564 - INFO - Continent Europe found
+2024-04-24 12:36:49,372 - INFO - Continent EU found
+2024-04-24 12:36:49,383 - INFO - Continent Europe found
+2024-04-24 13:15:14,608 - INFO - Continent EU found
+2024-04-24 13:15:14,617 - INFO - Continent Europe found
+2024-04-24 13:22:20,609 - INFO - Continent EU found
+2024-04-24 13:22:20,611 - INFO - Continent Europe found
+2024-04-24 13:24:09,159 - INFO - Continent EU found
+2024-04-24 13:24:09,160 - INFO - Continent Europe found
+2024-04-24 13:26:16,659 - INFO - Continent EU found
+2024-04-24 13:26:16,660 - INFO - Continent Europe found
+2024-04-24 13:27:00,953 - INFO - Continent EU found
+2024-04-24 13:27:00,954 - INFO - Continent Europe found
+2024-04-24 13:27:57,823 - INFO - Continent EU found
+2024-04-24 13:27:57,824 - INFO - Continent Europe found
+2024-04-24 13:28:41,548 - INFO - Continent EU found
+2024-04-24 13:28:41,548 - INFO - Continent Europe found
+2024-04-24 13:28:43,810 - ERROR - Failed to get temperature from continent API: 404
+2024-04-24 13:33:45,911 - INFO - Continent EU found
+2024-04-24 13:33:45,917 - INFO - Continent Europe found
+2024-04-24 13:33:54,340 - INFO - Continent EU found
+2024-04-24 13:33:54,341 - INFO - Continent Europe found
+2024-04-24 13:33:56,557 - ERROR - Failed to get temperature from continent API: 404
+2024-04-24 13:49:50,404 - INFO - Continent EU found
+2024-04-24 13:49:50,406 - INFO - Continent Europe found
+2024-04-24 13:49:56,018 - INFO - Continent EU found
+2024-04-24 13:49:56,018 - INFO - Continent Europe found
+2024-04-24 13:49:58,187 - ERROR - Failed to get temperature from continent API: 404
+2024-04-24 13:52:45,489 - INFO - Continent EU found
+2024-04-24 13:52:45,491 - INFO - Continent Europe found
+2024-04-24 13:52:55,721 - INFO - Continent EU found
+2024-04-24 13:52:55,722 - INFO - Continent Europe found
+2024-04-24 13:58:31,804 - INFO - Continent EU found
+2024-04-24 13:58:31,825 - INFO - Continent Europe found
+2024-04-24 13:58:38,739 - INFO - Continent EU found
+2024-04-24 13:58:38,740 - INFO - Continent Europe found
+2024-04-24 13:59:16,366 - INFO - Continent EU found
+2024-04-24 13:59:16,367 - INFO - Continent Europe found
+2024-04-24 13:59:26,054 - INFO - Continent EU found
+2024-04-24 13:59:26,055 - INFO - Continent Europe found
+2024-04-24 13:59:33,320 - INFO - Continent EU found
+2024-04-24 13:59:33,321 - INFO - Continent Europe found
+2024-04-24 14:01:47,661 - INFO - Continent EU found
+2024-04-24 14:01:47,662 - INFO - Continent Europe found
+2024-04-24 14:01:52,823 - INFO - Continent EU found
+2024-04-24 14:01:52,825 - INFO - Continent Europe found
+2024-04-24 14:08:29,658 - INFO - Continent EU found
+2024-04-24 14:08:29,669 - INFO - Continent Europe found
+2024-04-24 14:08:38,500 - INFO - Continent EU found
+2024-04-24 14:08:38,501 - INFO - Continent Europe found
+2024-04-24 14:10:15,089 - INFO - Continent EU found
+2024-04-24 14:10:15,090 - INFO - Continent Europe found
+2024-04-24 14:10:19,672 - INFO - Continent EU found
+2024-04-24 14:10:19,672 - INFO - Continent Europe found
+2024-04-24 14:11:34,226 - INFO - Continent EU found
+2024-04-24 14:11:34,226 - INFO - Continent Europe found
+2024-04-24 14:13:35,209 - INFO - Continent EU found
+2024-04-24 14:13:35,209 - INFO - Continent Europe found
+2024-04-24 14:13:45,020 - INFO - Continent EU found
+2024-04-24 14:13:45,021 - INFO - Continent Europe found
+2024-04-24 14:15:22,791 - INFO - Continent EU found
+2024-04-24 14:15:22,792 - INFO - Continent Europe found
+2024-04-24 14:15:55,403 - INFO - Continent EU found
+2024-04-24 14:15:55,403 - INFO - Continent Europe found
+2024-04-24 14:21:07,440 - ERROR - An error occurred: argument of type 'functools._lru_cache_wrapper' is not iterable
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 68, in request_handler
+    country_code = country_name_to_country_alpha2(country)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\pycountry_convert\convert_countries.py", line 65, in country_name_to_country_alpha2
+    if cn_name not in list_country_alpha2:
+TypeError: argument of type 'functools._lru_cache_wrapper' is not iterable
+2024-04-24 14:23:15,506 - ERROR - An error occurred: argument of type 'functools._lru_cache_wrapper' is not iterable
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 68, in request_handler
+    country_code = country_name_to_country_alpha2(country)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\pycountry_convert\convert_countries.py", line 65, in country_name_to_country_alpha2
+    if cn_name not in list_country_alpha2:
+TypeError: argument of type 'functools._lru_cache_wrapper' is not iterable
+2024-04-24 14:28:44,127 - INFO - Continent EU found
+2024-04-24 14:28:44,130 - INFO - Continent Europe found
+2024-04-24 14:29:34,158 - INFO - Continent EU found
+2024-04-24 14:29:34,159 - INFO - Continent Europe found
+2024-04-24 14:29:57,798 - INFO - Continent NA found
+2024-04-24 14:29:57,798 - INFO - Continent North America found
+2024-04-24 14:30:01,856 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E2671820>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1040, in _send_output
+    self.send(msg)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 980, in send
+    self.connect()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002C2E2671820>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E2671820>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 77, in request_handler
+    response = requests.get(continent_api_url, params={'continent': continent, 'country': country, 'name': name})
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E2671820>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-24 14:30:41,724 - INFO - Continent NA found
+2024-04-24 14:30:41,724 - INFO - Continent North America found
+2024-04-24 14:30:45,829 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E26F3D00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1040, in _send_output
+    self.send(msg)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 980, in send
+    self.connect()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002C2E26F3D00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E26F3D00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 77, in request_handler
+    response = requests.get(continent_api_url, params={'continent': continent, 'country': country, 'name': name})
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E26F3D00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-24 14:31:34,889 - INFO - Continent NA found
+2024-04-24 14:31:34,891 - INFO - Continent North America found
+2024-04-24 14:31:38,952 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E263FB20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1040, in _send_output
+    self.send(msg)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 980, in send
+    self.connect()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002C2E263FB20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E263FB20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 77, in request_handler
+    response = requests.get(continent_api_url, params={'continent': continent, 'country': country, 'name': name})
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002C2E263FB20>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-24 14:40:05,338 - INFO - Continent NA found
+2024-04-24 14:40:05,342 - INFO - Continent North America found
+2024-04-24 14:40:09,416 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000160AA5E01F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1040, in _send_output
+    self.send(msg)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 980, in send
+    self.connect()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000160AA5E01F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000160AA5E01F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 77, in request_handler
+    response = requests.get(continent_api_url, params={'continent': continent, 'country': country, 'name': name})
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Toronto (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000160AA5E01F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-24 14:40:28,474 - INFO - Continent EU found
+2024-04-24 14:40:28,474 - INFO - Continent Europe found
+2024-04-24 14:40:52,557 - INFO - Continent EU found
+2024-04-24 14:40:52,559 - INFO - Continent Europe found
+2024-04-24 14:41:10,720 - INFO - Continent NA found
+2024-04-24 14:41:10,720 - INFO - Continent North America found
+2024-04-24 14:41:14,772 - ERROR - An error occurred: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Vancouver (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000160AA686430>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1040, in _send_output
+    self.send(msg)
+  File "C:\Users\murva\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 980, in send
+    self.connect()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000160AA686430>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Vancouver (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000160AA686430>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\app.py", line 77, in request_handler
+    response = requests.get(continent_api_url, params={'continent': continent, 'country': country, 'name': name})
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\murva\Documents\husham\distributed systems LUT\ds-temperature\request-handler\request_handler\.venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5003): Max retries exceeded with url: /temperature?continent=North+America&country=Canada&name=Vancouver (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000160AA686430>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2024-04-24 14:42:29,827 - INFO - Country Finland found
+2024-04-24 14:42:29,828 - INFO - Continent EU found
+2024-04-24 14:42:29,829 - INFO - Continent Europe found
+2024-04-24 14:47:54,190 - INFO - Country Finland found
+2024-04-24 14:47:54,193 - INFO - Continent EU found
+2024-04-24 14:47:54,194 - INFO - Continent Europe found
+2024-04-24 14:56:16,229 - ERROR - country, city, latitude, longitude not given
+2024-04-24 14:57:22,911 - INFO - Country Finland found
+2024-04-24 14:57:22,929 - INFO - Continent EU found
+2024-04-24 14:57:22,931 - INFO - Continent Europe found
+2024-04-24 14:57:59,015 - INFO - Continent EU found
+2024-04-24 14:57:59,017 - INFO - Continent Europe found
+2024-04-24 14:58:36,991 - INFO - Country Sweden found
+2024-04-24 14:58:36,992 - INFO - Continent EU found
+2024-04-24 14:58:36,992 - INFO - Continent Europe found
+2024-04-24 15:03:55,340 - INFO - Country Sweden found
+2024-04-24 15:03:55,345 - INFO - Continent EU found
+2024-04-24 15:03:55,345 - INFO - Continent Europe found
+2024-04-24 15:04:22,164 - INFO - Country Finland found
+2024-04-24 15:04:22,165 - INFO - Continent EU found
+2024-04-24 15:04:22,166 - INFO - Continent Europe found
+2024-04-24 15:05:44,108 - INFO - Country Finland found
+2024-04-24 15:05:44,109 - INFO - Continent EU found
+2024-04-24 15:05:44,109 - INFO - Continent Europe found
+2024-04-24 15:06:24,540 - INFO - Continent EU found
+2024-04-24 15:06:24,540 - INFO - Continent Europe found
+2024-04-24 15:45:14,384 - INFO - Continent EU found
+2024-04-24 15:45:14,389 - INFO - Continent Europe found
+2024-04-24 15:45:20,463 - INFO - Continent EU found
+2024-04-24 15:45:20,464 - INFO - Continent Europe found
+2024-04-24 15:46:06,406 - INFO - Country Finland found
+2024-04-24 15:46:06,407 - INFO - Continent EU found
+2024-04-24 15:46:06,409 - INFO - Continent Europe found
+2024-04-24 15:46:29,482 - INFO - Country Finland found
+2024-04-24 15:46:29,483 - INFO - Continent EU found
+2024-04-24 15:46:29,484 - INFO - Continent Europe found

@@ -31,7 +31,6 @@ console_handler.setFormatter(console_formatter)
 console_handler.setLevel(logging.INFO)
 logger.addHandler(console_handler)
 
-PORT = 8001
 
 class Location:
     def __init__(self, continent, country, name, latitude, longitude):
@@ -150,7 +149,7 @@ class Sensor:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 8:
+    if len(sys.argv) != 9:
         print("Usage: python program.py <address> <sensor_type> <continent> <country> <location_name> <latitude> <longitude>")
         sys.exit(1)
 
@@ -161,13 +160,14 @@ if __name__ == "__main__":
     location_name = sys.argv[5]
     latitude = float(sys.argv[6])
     longitude = float(sys.argv[7])
+    port = int(sys.argv[8])
 
     sensor = Sensor(sensor_type, continent, country, location_name, latitude, longitude)
 
     # Create an XML-RPC server
-    server = SimpleXMLRPCServer((address, PORT), allow_none=True)
+    server = SimpleXMLRPCServer((address, port), allow_none=True)
     server.register_instance(sensor)
-    logging.info(f"RPC server started on port {PORT}.")
+    logging.info(f"RPC server started on port {port}.")
 
     while not sensor.server_stopped:
         server.handle_request()

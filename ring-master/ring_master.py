@@ -6,6 +6,7 @@ import logging
 import queue
 import json
 import time
+import socketio
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG,
@@ -15,7 +16,7 @@ logging.basicConfig(level=logging.DEBUG,
                         logging.FileHandler('ring_master.log'),
                         logging.StreamHandler()
                     ])
-SERVER_PORT = 8003
+COLLECTOR_SERVER_PORT = 8003
 
 
 class Continent:
@@ -24,18 +25,22 @@ class Continent:
         self.url = url
         self.queue = queue.Queue()
         self.queue_lock = threading.Lock()
+        self.sio = None
 
     def send_data(self):
         while True:
             if not self.queue.empty():
                 with self.queue_lock:
-                    data = self.queue.get()
+                    data = self.queue.queue[0]
                 try:
-                    ws = connect(self.url)
-                    ws.send(data)
-                    ws.close()
+                    if self.sio is None:
+                        self.sio = socketio.Client()
+                        self.sio.connect(self.url, namespaces='/continent', transports=['websocket'])
+                    self.sio.send(data, namespace='/continent')
                     logging.info(f"Sent data to {self.name}: {data}")
+                    self.queue.get()
                 except Exception as e:
+                    self.sio.disconnect()
                     logging.error(f"Error sending data to {self.name}: {e}")
             time.sleep(1)
 
@@ -44,18 +49,16 @@ class Continent:
 global_queue = queue.Queue()
 global_queue_lock = threading.Lock()
 
-# Websocket URL for temperature collector
-temperature_collector_url = "ws://temperature_collector_url"
 
 # Create instances of Continent class
 continents = [
-    Continent("Asia", "ws://asia_external_server_url"),
-    Continent("North America", "ws://north_america_external_server_url"),
-    Continent("South America", "ws://south_america_external_server_url"),
-    Continent("Europe", "ws://europe_external_server_url"),
-    Continent("Australia", "ws://australia_external_server_url"),
-    Continent("Africa", "ws://africa_external_server_url"),
-    Continent("Antarctica", "ws://antarctica_external_server_url")
+    Continent("Asia", "ws://localhost:8005"),
+    Continent("North America", "ws://localhost:8006"),
+    Continent("South America", "ws://localhost:8007"),
+    Continent("Europe", "http://localhost:5000"),
+    Continent("Australia", "ws://localhost:8009"),
+    Continent("Africa", "ws://localhost:8010"),
+    Continent("Antarctica", "ws://localhost:8011")
 ]
 
 
@@ -73,9 +76,9 @@ async def handle_websocket(websocket, path):
         logging.info(f"connection is closed: {str(e)}")
 
 
-def receive_data_from_temperature_collector():
-    start_server = websockets.serve(handle_websocket, "localhost", SERVER_PORT,ping_timeout=None)
-    asyncio.get_event_loop().run_until_complete(start_server)
+def start_websockets_servers():
+    collector_server = websockets.serve(handle_websocket, "localhost", COLLECTOR_SERVER_PORT, ping_timeout=None)
+    asyncio.get_event_loop().run_until_complete(collector_server)
     asyncio.get_event_loop().run_forever()
 
 
@@ -113,6 +116,6 @@ transfer_thread.daemon = True
 transfer_thread.start()
 
 
-receive_data_from_temperature_collector()
+start_websockets_servers()
 
 
